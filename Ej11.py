@@ -88,22 +88,38 @@ def canvi_de_base():
     while op3>0:
         print(""""
             Canvi de base
-                1. Binari
-                2. Octal
-                3. Hexadecimal
-                4. Sortir
+                1. Donant un binaria ho passem a tota la resta
+                2. Donant un octal ho passem a tota la resta
+                3. Donant un decimal ho passem a tota la resta
+                4. Donant un hexadecimal ho passem a tota la resta
+                5. Sortir
               """)
         op3 = int(input("Elige la opción: "))
         match op3:
             case 1: #Binari
-                x = int(input("Introdueix un nombre: "))
-                print(bin(x))
+                b = int(input("Introdueix un nombre: "))
+                o = bintoct(b)
+                d = bintodec(b)
+                h = bintohex(b)
+                print("El numero binari {} es: \n oct -> {} \n dec -> {} \n hex ->".format(b,o,d,h))
             case 2: #Octal
-                x = int(input("Introdueix un nombre: "))
-                print(oct(x))
-            case 3: #Hexadecimal
-                x = int(input("Introdueix un nombre: "))
-                print(hex(x))
+                b = int(input("Introdueix un nombre: "))
+                o = octtobin(o)
+                d = octtodec(o)
+                h = octtohex(o)
+                print("El numero octal {} es: \n bin -> {} \n dec -> {} \n hex ->".format(o,b,d,h))
+            case 3: #Decimal
+                b = int(input("Introdueix un nombre: "))
+                o = dectobin(d)
+                d = dectooct(d)
+                h = dectohex(d)
+                print("El numero decimal {} es: \n bin -> {} \n oct -> {} \n hex ->".format(d,b,o,h))
+            case 4: #Hexadecimal
+                b = int(input("Introdueix un nombre: "))
+                o = hextobin(h)
+                d = hextooct(h)
+                h = hextodec(h)
+                print("El numero hexadecimal {} es: \n bin -> {} \n oct -> {} \n dec ->".format(h,b,o,d))
             case 4: #Sortir
                 print("Adeu, ja tornaras a la calculadora inicial \n\n")
                 op3=-1
