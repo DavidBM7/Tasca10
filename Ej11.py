@@ -121,6 +121,4 @@ while opcio>0:
                 canvi_de_base()
             case 4:
                 print("Gràcies, m'en vaig!")
-                opcio=-1
-
 #Inicia Calculadora de enteros (si presionas el 1 en el Menú)
