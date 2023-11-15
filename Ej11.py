@@ -82,6 +82,81 @@ def calculadora_reals():
                 print("Adeu, ja tornaras a la calculadora inicial \n\n")
                 op2=-1
 
+#Funcions de canvi de base
+
+#De decimals a altres
+def dectobin(numero):
+    # Prec: Numero enter
+    # Post: Esriu el valor de l'enter en binari
+    return bin(numero)
+
+def dectooct(numero):
+    # Prec: Numero enter
+    # Post: Esriu el valor de l'enter en octal
+    return oct(numero)
+
+def dectohex(numero):
+    # Prec: Numero enter
+    # Post: Esriu el valor de l'enter en hexadecimal
+    return hex(numero)
+
+#De binari a altres
+def bintodec(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor binari en enter
+    a=int(numero,2)
+    return a
+
+def bintooct(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor de binari en octal
+    a=int(numero,2)
+    return oct(numero)
+
+def bintohex(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor de binari en hexadecimal
+    a=int(numero,2)
+    return hex(numero)
+   
+#De octal a altres
+def octtodec(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor octal en enter
+    a=int(numero,8)
+    return a
+
+def octtobin(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor de octal en binari
+    a=int(numero,8)
+    return bin(numero)
+
+def octtohex(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor de octal en hexadecimal
+    a=int(numero,8)
+    return hex(numero)
+
+#De hexa a altres
+def hextodec(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor hex en enter
+    a=int(numero,16)
+    return a
+
+def hextobin(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor de hex en binari
+    a=int(numero,16)
+    return bin(numero)
+
+def hextooct(numero):
+    # Prec: Numero ser cadena de caracters
+    # Post: Esriu el valor de hexa en octal
+    a=int(numero,8)
+    return hex(numero)
+
 def canvi_de_base():
     print("Canvi de base")
     op3 = 1
@@ -98,7 +173,7 @@ def canvi_de_base():
         match op3:
             case 1: #Binari
                 b = int(input("Introdueix un nombre: "))
-                o = bintoct(b)
+                o = bintooct(b)
                 d = bintodec(b)
                 h = bintohex(b)
                 print("El numero binari {} es: \n oct -> {} \n dec -> {} \n hex ->".format(b,o,d,h))
