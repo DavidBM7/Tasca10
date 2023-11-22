@@ -73,88 +73,8 @@ def calculadora_reals():
             case 5: #Sortir
                 print("Adeu, ja tornaras a la calculadora inicial \n\n")
                 op2=-1
-#Funcions de canvi de base
-#De decimals a altres
-def dectobin(numero):
-    # Prec: Numero enter
-    # Post: Esriu el valor de l'enter en binari
-    return bin(numero)
-def dectooct(numero):
-    # Prec: Numero enter
-    # Post: Esriu el valor de l'enter en octal
-    return oct(numero)
-def dectohex(numero):
-    # Prec: Numero enter
-    # Post: Esriu el valor de l'enter en hexadecimal
-    return hex(numero)
-#De binari a altres
-def bintooct(numero):
-    # Prec: Numero ser cadena de caracters
-    # Post: Esriu el valor binari en enter
-    a=int(numero,2)
-    return dectooct(a)
-def bintodec(numero):
-    # Prec: Numero ser cadena de caracters
-    # Post: Esriu el valor de binari en octal
-    a=int(numero,2)
-    return a
-def bintohex(numero):
-    # Prec: Numero ser cadena de caracters
-    # Post: Esriu el valor de binari en hexadecimal
-    a=int(numero,2)
-    return dectohex(a)
-#De octal a altres
-def octtobin(numero):
-    # Prec: Numero ser cadena de caracters
-    # Post: Esriu el valor octal en enter
-    a=int(numero,8)
-    return dectobin (a)
-def octtodec(numero):
-    # Prec: Numero ser cadena de caracters
-    # Post: Esriu el valor de octal en binari
-    a=int(numero,8)
-    return (a)
-def octtohex(numero):
-    # Prec: Numero ser cadena de caracters
-    # Post: Esriu el valor de octal en hexadecimal
-    a=int(numero,8)
-    return dectohex(a)
-#De hexa a altres
-def hextonum(hex):
-    pnum = {
-        "f": 15,
-        "e": 14,
-        "d": 13,
-        "c": 12,
-        "b": 11,
-        "a": 10
-    }
-    if hex in pnum:
-        return pnum[hex]
-    else:
-        return int(hex)
-def hextodec2(hex):
-    hex = hex.lower()
-    hex = hex[::-1]
-    decimal = 0
-    posicio = 0
-    for digit in hex:
-        valor = hextonum(digit)
-        elevat = 16 ** posicio
-        pnum = elevat * valor
-        decimal += pnum
-        posicio += 1
-    return decimal
-def hextobin(numero):
-    a=int(numero,16)
-    return dectobin(a)
-def hextooct(numero):
-    a=int(numero,16)
-    return dectooct(a)
-def hextodec(numero):
-    a=hextodec2(numero)
-    return a
-def canvi_base():
+
+def canvi_de_base():
     print("Canvi de base")
     op = 1
     while op>0:
@@ -175,23 +95,11 @@ def canvi_base():
                 h = bintohex(b)
                 print("El numero binari {} es: \n oct -> {} \n dec -> {} \n hex ->".format(b,o,d,h))
             case 2: #Octal
-                b = int(input("Introdueix un nombre octal: "))
-                o = octtobin(o)
-                d = octtodec(o)
-                h = octtohex(o)
-                print("El numero octal {} es: \n bin -> {} \n dec -> {} \n hex ->".format(o,b,d,h))
-            case 3: #Decimal
-                b = int(input("Introdueix un nombre decimal: "))
-                o = dectobin(d)
-                d = dectooct(d)
-                h = dectohex(d)
-                print("El numero decimal {} es: \n bin -> {} \n oct -> {} \n hex ->".format(d,b,o,h))
-            case 4: #Hexadecimal
-                b = int(input("Introdueix un nombre hexadecimal: "))
-                o = hextobin(h)
-                d = hextooct(h)
-                h = hextodec(h)
-                print("El numero hexadecimal {} es: \n bin -> {} \n oct -> {} \n dec ->".format(h,b,o,d))
+                x = int(input("Introdueix un nombre: "))
+                print(oct(x))
+            case 3: #Hexadecimal
+                x = int(input("Introdueix un nombre: "))
+                print(hex(x))
             case 4: #Sortir
                 print("Adeu, ja tornaras a la calculadora inicial \n\n")
                 op=-1
