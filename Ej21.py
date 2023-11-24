@@ -1,6 +1,6 @@
-def crear_repetits(num, caracter):
-    return caracter * num
+def crear_punts(llista):
+    for num in llista:
+        print("a" * num)
 
-# Pp
-resultado = crear_repetits(6, "a")
-print(resultado)
+#Practica principal
+crear_punts([5])
