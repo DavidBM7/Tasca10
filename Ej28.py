@@ -1,5 +1,4 @@
 # Binario a Decimal
-
 binario = int(input("número en binario: "))
 
 decimal = 0

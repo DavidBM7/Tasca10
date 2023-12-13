@@ -6,5 +6,5 @@ def mes_gran_que(t,x):
             print()
 # Programa principal
 t = (1,54,89,2,4,7,18,19)
-x = int(input("introdueix"))
+x = int(input("Introdueix: "))
 mes_gran_que(t,x)

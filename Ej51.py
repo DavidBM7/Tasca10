@@ -9,7 +9,7 @@ def llegir_llista_paraules():
     return b
 def index_paraula(llista,paraula):
     return [i for i,e in enumerate(llista) if paraula == e]
-#pprincipal
+#Programa principal
 a = llegir_llista_paraules()
 p = input("Introdueix la paraula a cercar el seu índex: ")
 b = index_paraula(a,p)

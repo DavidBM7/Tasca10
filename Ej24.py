@@ -1,4 +1,5 @@
 def gran_llista(llista):
+    #si no hi ha es retorna none sino retorna el valor mes gran de la llista
     if not llista:
         return None  
     else:

@@ -17,3 +17,4 @@ if es_de_traspas(any_a_comprovar):
 else:
     print(f'{any_a_comprovar} no és un any de traspàs.')
 
+#programa que indica si l'any es visiest dividint l'any i si dona exacte 0 ho es sino no

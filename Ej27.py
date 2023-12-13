@@ -1,5 +1,5 @@
 def comptar_majuscules(cadena):
-
+#llegeix la llista i determina el nombre de lletres en majuscala
     majuscules = sum(1 for lletra in cadena if lletra.isupper())
     return majuscules
 

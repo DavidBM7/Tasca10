@@ -1,3 +1,4 @@
+#Imprime el dibujo
 print("""
     . . .
      . .

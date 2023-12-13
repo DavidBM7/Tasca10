@@ -1,4 +1,5 @@
 def filtrar_paraules(llista_paraules, x):
+    #llegeix la llista i imprimeix nomes les paraules que tenguin un minim de lletres donades
     paraules_filtrades = [paraula for paraula in llista_paraules if len(paraula) > x]
     return paraules_filtrades
 

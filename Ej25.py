@@ -1,4 +1,5 @@
 def paraula_mes_llarga(llista_paraules):
+    #si no hi ha es retorna none sino retorna la paraula mes llarga de la llista
     if not llista_paraules:
         return None 
     else:
